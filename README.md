@@ -1,7 +1,7 @@
 # GLU Variants Improve Transformer
 Noam Shazeer (Google)
 
-- [Google Paid $2.7 Billion to Bring Back AI Genius](https://www.wsj.com/tech/ai/noam-shazeer-google-ai-deal-d3605697?msockid=17cb7d10f5b46222298d6e23f49863b6)
+- [AI Genius?](https://www.wsj.com/tech/ai/noam-shazeer-google-ai-deal-d3605697?msockid=17cb7d10f5b46222298d6e23f49863b6)
 
 train GLU on a samller sample for your code/ pseudo code / claude artefact
 
