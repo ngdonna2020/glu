@@ -31,6 +31,11 @@ Table 1: Heldout-set log-perplexity for Transformer models on the segment-fillin
 Table 2: GLUE Language-Understanding Benchmark
 
 
+<img width="911" alt="image" src="https://github.com/user-attachments/assets/9e2f5104-723c-4713-9935-c8d69ba61ded">
+
+Table 3: SuperGLUE Language-Understanding Benchmark
+
+
 However, the author does not provide a detailed explanation for why these variants outperform the others, humorously attributing their success to "divine benevolence."
 
 ## Critical Analysis
