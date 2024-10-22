@@ -45,3 +45,7 @@ This paper contributes to the continuous evolution of transformer models, showin
 Shazeer, N. (2020). *GLU Variants Improve Transformer*. [arXiv:2002.05202](https://arxiv.org/abs/2002.05202).
 
 Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou, Y., Li, W., & Liu, P. (2019). *Exploring the limits of transfer learning with a unified text-to-text transformer*. [arXiv:1910.10683](https://arxiv.org/abs/1910.10683).
+
+Wang, A., Singh, A., Michael, J., Hill, F., Levy, O., & Bowman, S. R. (2018). *GLUE: A multi-task benchmark and analysis platform for natural language understanding*. [arXiv:1804.07461](https://arxiv.org/abs/1804.07461).
+
+Wang, A., Pruksachatkun, Y., Nangia, N., Singh, A., Michael, J., Hill, F., Levy, O., & Bowman, S. R. (2019). *SuperGLUE: A stickier benchmark for general-purpose language understanding systems*. [arXiv:1905.00537](https://arxiv.org/abs/1905.00537).
