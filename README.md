@@ -32,7 +32,7 @@ This paper contributes to the continuous evolution of transformer models, showin
 - [GELU: 1606.08415](https://arxiv.org/abs/1606.08415)
 - [GLUE Benchmark: 1804.07461](https://arxiv.org/abs/1804.07461)
 - [SuperGLUE Benchmark: 1905.00537](https://arxiv.org/abs/1905.00537)
-- [Author on the news](https://www.wsj.com/tech/ai/noam-shazeer-google-ai-deal-d3605697?msockid=17cb7d10f5b46222298d6e23f49863b6)
+- [Noam Shazeer - Google Deal on WSJ](https://www.wsj.com/tech/ai/noam-shazeer-google-ai-deal-d3605697?msockid=17cb7d10f5b46222298d6e23f49863b6)
 
 ## Citation
 Shazeer, N. (2020). *GLU Variants Improve Transformer*. [arXiv:2002.05202](https://arxiv.org/abs/2002.05202).
