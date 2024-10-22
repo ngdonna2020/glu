@@ -9,7 +9,7 @@ https://www.wsj.com/tech/ai/noam-shazeer-google-ai-deal-d3605697?msockid=17cb7d1
 
 
 ## Overview
-The paper *GLU Variants Improve Transformer* by Noam Shazeer addresses a key challenge in transformer models: improving the quality of the feed-forward layers. Traditionally, transformers have used ReLU (Rectified Linear Unit) or GELU (Gaussian Error Linear Unit) activations in their feed-forward sublayers. This paper explores variations of the Gated Linear Unit (GLU) as alternatives to these activations to enhance performance.
+The paper *GLU Variants Improve Transformer* addresses a key challenge in transformer models: improving the quality of the feed-forward layers. Traditionally, transformers have used ReLU (Rectified Linear Unit) or GELU (Gaussian Error Linear Unit) activations in their feed-forward sublayers. This paper explores variations of the Gated Linear Unit (GLU) as alternatives to these activations to enhance performance.
 
 ## Problem
 Transformers often rely on ReLU or GELU activations in their feed-forward networks (FFNs). However, GLU (introduced in 2016), defined as the component-wise product of two linear transformations of the input (one of which is sigmoid-activated), offers a viable alternative. This paper proposes and tests several GLU variants to determine if they can improve upon the traditional ReLU or GELU activations.
