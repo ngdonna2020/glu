@@ -43,4 +43,5 @@ This paper contributes to the continuous evolution of transformer models, showin
 
 ## Citation
 Shazeer, N. (2020). *GLU Variants Improve Transformer*. [arXiv:2002.05202](https://arxiv.org/abs/2002.05202).
+
 Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou, Y., Li, W., & Liu, P. (2019). *Exploring the limits of transfer learning with a unified text-to-text transformer*. [arXiv:1910.10683](https://arxiv.org/abs/1910.10683).
