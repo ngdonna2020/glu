@@ -25,6 +25,12 @@ The paper presents comparative results between different models in tabulated for
 
 Table 1: Heldout-set log-perplexity for Transformer models on the segment-filling task. All models are matched for parameters and computation.
 
+
+<img width="911" alt="image" src="https://github.com/user-attachments/assets/140a21aa-a261-4dd1-92e0-0d8884b5ed97">
+
+Table 2: GLUE Language-Understanding Benchmark
+
+
 However, the author does not provide a detailed explanation for why these variants outperform the others, humorously attributing their success to "divine benevolence."
 
 ## Critical Analysis
