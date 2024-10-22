@@ -22,7 +22,8 @@ The paper presents comparative results between different models in tabulated for
 
 
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/74769d83-1684-4141-bbf0-5873d68866b4">
-
+Table 1: Heldout-set log-perplexity for Transformer models on the segment-filling task from [Raffel et al.,
+2019]. All models are matched for parameters and computation.
 
 However, the author does not provide a detailed explanation for why these variants outperform the others, humorously attributing their success to "divine benevolence."
 
