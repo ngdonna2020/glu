@@ -21,7 +21,7 @@ Shazeer and his team created multiple variations of GLU using different function
 The paper presents comparative results between different models in tabulated form. In a transfer-learning context, the new GLU variants show improved perplexities for the pre-training de-noising objective and perform better on many downstream language-understanding tasks. Specifically, the GEGLU and SwiGLU variants yielded the best perplexities. 
 
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/74769d83-1684-4141-bbf0-5873d68866b4">
+<img width="950" alt="image" src="https://github.com/user-attachments/assets/74769d83-1684-4141-bbf0-5873d68866b4">
 Table 1: Heldout-set log-perplexity for Transformer models on the segment-filling task from [Raffel et al.,
 2019]. All models are matched for parameters and computation.
 
@@ -43,3 +43,4 @@ This paper contributes to the continuous evolution of transformer models, showin
 
 ## Citation
 Shazeer, N. (2020). *GLU Variants Improve Transformer*. [arXiv:2002.05202](https://arxiv.org/abs/2002.05202).
+Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou, Y., Li, W., & Liu, P. (2019). *Exploring the limits of transfer learning with a unified text-to-text transformer*. [arXiv:1910.10683](https://arxiv.org/abs/1910.10683).
