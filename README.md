@@ -1,2 +1,2 @@
-# glu
-GLU variants improve transformer
+# GLU Variants Improve Transformer
+Noam Shazeer - Google
