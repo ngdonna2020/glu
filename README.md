@@ -21,7 +21,7 @@ Shazeer and his team created multiple variations of GLU using different function
 The paper presents comparative results between different models in tabulated form. In a transfer-learning context, the new GLU variants show improved perplexities for the pre-training de-noising objective and perform better on many downstream language-understanding tasks. Specifically, the GEGLU and SwiGLU variants yielded the best perplexities. 
 
 
-<img width="2000" alt="image" src="https://github.com/user-attachments/assets/74769d83-1684-4141-bbf0-5873d68866b4">
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/74769d83-1684-4141-bbf0-5873d68866b4">
 
 
 However, the author does not provide a detailed explanation for why these variants outperform the others, humorously attributing their success to "divine benevolence."
