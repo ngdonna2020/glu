@@ -15,9 +15,11 @@ Transformers often rely on ReLU or GELU activations in their feed-forward networ
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/b8d5fe9d-2a35-4d06-ba7c-1fc5a8b7e8ad">
 
 
-Here we see we have two trainable matrices W and V with V being used to calculate the gated unit. The gate provides an additional filter after the activation which can be learned during training and depends on the input itself. The ⊗ operation is the element-wise multiplication. xV+c acts as a filter for the other half of the operation. So depending on what the matrix values are in the filter, those same entries become prominent or are diminished from the sigmoid activation matrix.
+*Question 1: What is representing gating mechanishm? Explain the idea of the "gate"?*
 
-*Question 1: How do GLU variants differ from traditional ReLU/GELU activations, and why might they lead to better performance?*
+![image](https://github.com/user-attachments/assets/735c5b5d-26ed-4643-91e4-74c6e4e9a2a1)
+
+GLU is a linear transformation followed by a gating mechanism. Here we see we have two trainable matrices W and V with V being used to calculate the gated unit. The gate provides an additional filter after the activation which can be learned during training and depends on the input itself. The ⊗ operation is the element-wise multiplication. xV+c acts as a filter for the other half of the operation. So depending on what the matrix values are in the filter, those same entries become prominent or are diminished from the sigmoid activation matrix.
 
 ## Approach
 Shazeer and his team created multiple variations of GLU using different functions (like ReLU, GELU, or Swish) instead of sigmoid. They proposed additional variations on the Transformer FFN layer which use GLU or one of its variants in place of the first linear transformation and the activation function and omited the bias terms (for example: $FFN_{RELU}(x, W_1, W_2)=RELU(xW_1)W_2$ ). To assess model quality, they calculated log-perplexity for comparison. Each fully-trained model was fine-tuned on a proportional mixture of the Stanford Question-Answering Dataset (SQuAD) and tasks from the GLUE and SuperGLUE benchmarks. The paper reports the best performance for each task based on the recorded checkpoints during fine-tuning.
