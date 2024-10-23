@@ -14,6 +14,9 @@ Transformers often rely on ReLU or GELU activations in their feed-forward networ
 
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/b8d5fe9d-2a35-4d06-ba7c-1fc5a8b7e8ad">
 
+
+Here we see we have two trainable matrices W and V with V being used to calculate the gated unit. The gate provides an additional filter after the activation which can be learned during training and depends on the input itself. The ⊗ operation is the element-wise multiplication. The output of xV+c acts as a filter for the other half of the operation. So depending on what the matrix values are in the filter, those same entries become prominent or are diminished from the sigmoid activation matrix.
+
 *Question 1: How do GLU variants differ from traditional ReLU/GELU activations, and why might they lead to better performance?*
 
 ## Approach
