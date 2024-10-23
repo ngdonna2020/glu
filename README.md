@@ -67,6 +67,9 @@ See the Pseudocode file in the repo.
 The paper presents comparative results between different models in tabulated form. In a transfer-learning context, the new GLU variants show improved perplexities for the pre-training de-noising objective and perform better on many downstream language-understanding tasks. Specifically, the GEGLU and SwiGLU variants yielded the best perplexities. 
 
 
+- [Claude Artifact](https://claude.site/artifacts/300fd9b1-f8fa-44d4-8f66-f59e1440eb67)
+
+
 <img width="950" alt="image" src="https://github.com/user-attachments/assets/74769d83-1684-4141-bbf0-5873d68866b4">
 
 Table 1: Heldout-set log-perplexity for Transformer models on the segment-filling task. All models are matched for parameters and computation.
