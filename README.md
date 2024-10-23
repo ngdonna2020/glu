@@ -26,6 +26,10 @@ Shazeer and his team created multiple variations of GLU using different function
 
 *Question 2: All of the Transformer FFN layers which use GLU or one of its variants  have three weight matrices, as opposed to two for the original FFN. How do we keep the number of parameters and the amount of computation constant?*
 
+
+## Pseudocode
+See the Pseudocode file in the repo.
+
 ## How the Problem Was Addressed
 The paper presents comparative results between different models in tabulated form. In a transfer-learning context, the new GLU variants show improved perplexities for the pre-training de-noising objective and perform better on many downstream language-understanding tasks. Specifically, the GEGLU and SwiGLU variants yielded the best perplexities. 
 
