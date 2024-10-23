@@ -104,7 +104,7 @@ This paper contributes to the continuous evolution of transformer models, showin
 - [Claude Artifact](https://claude.site/artifacts/300fd9b1-f8fa-44d4-8f66-f59e1440eb67)
 
 ## Citation
-Dauphin, Y., Fan, A., Auli, M., & Grangier, D. (2016). *Language modeling with gated convolutional networks*. [arXiv:1905.005371612.08083](http://arxiv.org/abs/1612.08083).
+Dauphin, Y., Fan, A., Auli, M., & Grangier, D. (2016). *Language modeling with gated convolutional networks*. [arXiv:1612.08083](http://arxiv.org/abs/1612.08083).
 
 Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou, Y., Li, W., & Liu, P. (2019). *Exploring the limits of transfer learning with a unified text-to-text transformer*. [arXiv:1910.10683](https://arxiv.org/abs/1910.10683).
 
