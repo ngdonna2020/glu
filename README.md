@@ -19,6 +19,11 @@ Transformers often rely on ReLU or GELU activations in their feed-forward networ
 
 ![image](https://github.com/user-attachments/assets/735c5b5d-26ed-4643-91e4-74c6e4e9a2a1)
 
+Hint:
+![6533a601586082158f57f44fa39ab3c6](https://github.com/user-attachments/assets/39e58b50-bff8-46c2-adc3-3c3d64b1d298)
+
+The sigmoid function transforms those inputs whose values lie in the domain R, to outputs that lie on the interval (0, 1). 
+
 GLU is a linear transformation followed by a gating mechanism. Here we see we have two trainable matrices W and V with V being used to calculate the gated unit. The gate provides an additional filter after the activation which can be learned during training and depends on the input itself. The ⊗ operation is the element-wise multiplication. xV+c acts as a filter for the other half of the operation. So depending on what the matrix values are in the filter, those same entries become prominent or are diminished from the sigmoid activation matrix.
 
 ## Approach
