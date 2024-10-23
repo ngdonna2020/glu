@@ -8,14 +8,23 @@ train GLU on a samller sample for your code/ pseudo code / claude artefact
 ask people questions
 
 
-## Overview
+## Context
 The paper *GLU Variants Improve Transformer* addresses a key challenge in transformer models: improving the quality of the feed-forward layers. Traditionally, transformers have used ReLU (Rectified Linear Unit) or GELU (Gaussian Error Linear Unit) activations in their feed-forward sublayers. This paper explores variations of the Gated Linear Unit (GLU) as alternatives to these activations to enhance performance.
 
 ## Problem
 Transformers often rely on ReLU or GELU activations in their feed-forward networks (FFNs). However, GLU (introduced in 2016), defined as the component-wise product of two linear transformations of the input (one of which is sigmoid-activated), offers a viable alternative. This paper proposes and tests several GLU variants to determine if they can improve upon the traditional ReLU or GELU activations.
 
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/b8d5fe9d-2a35-4d06-ba7c-1fc5a8b7e8ad">
+
+*Question 1: How do GLU variants differ from traditional ReLU/GELU activations, and why might they lead to better performance?*
+
 ## Approach
-Shazeer and his team created multiple variations of GLU using different functions (ReLU, GELU, or Swish) instead of sigmoid. To assess model quality, they calculated log-perplexity for comparison. Each fully-trained model was fine-tuned on a proportional mixture of the Stanford Question-Answering Dataset (SQuAD) and tasks from the GLUE and SuperGLUE benchmarks. The paper reports the best performance for each task based on the recorded checkpoints during fine-tuning.
+Shazeer and his team created multiple variations of GLU using different functions (like ReLU, GELU, or Swish) instead of sigmoid. To assess model quality, they calculated log-perplexity for comparison. Each fully-trained model was fine-tuned on a proportional mixture of the Stanford Question-Answering Dataset (SQuAD) and tasks from the GLUE and SuperGLUE benchmarks. The paper reports the best performance for each task based on the recorded checkpoints during fine-tuning.
+
+<img width="317" alt="image" src="https://github.com/user-attachments/assets/3f644cfc-dbe1-48d6-81b2-77f23200c888">
+
+
+*Question 2: All of the Transformer FFN layers which use GLU or one of its variants  have three weight matrices, as opposed to two for the original FFN. How do we keep the number of parameters and the amount of computation constant?*
 
 ## How the Problem Was Addressed
 The paper presents comparative results between different models in tabulated form. In a transfer-learning context, the new GLU variants show improved perplexities for the pre-training de-noising objective and perform better on many downstream language-understanding tasks. Specifically, the GEGLU and SwiGLU variants yielded the best perplexities. 
