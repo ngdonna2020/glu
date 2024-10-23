@@ -60,8 +60,6 @@ Reduction Factor:
 To match the parameter count of the original FFN, the hidden dimension $d_{ff}$ in the GLU variants is reduced by a factor of 2/3.
 This ensures that $(3 \times d_{model} \times (2/3 \times d_{ff}) = 2 \times d_{model} \times d_{ff})$, keeping the number of parameters and computational cost constant.
 
-## Pseudocode
-See the Pseudocode file in the repo.
 
 ## How the Problem Was Addressed
 The paper presents comparative results between different models in tabulated form. In a transfer-learning context, the new GLU variants show improved perplexities for the pre-training de-noising objective and perform better on many downstream language-understanding tasks. Specifically, the GEGLU and SwiGLU variants yielded the best perplexities. 
@@ -92,6 +90,9 @@ While the paper demonstrates that GLU variants can enhance transformer performan
 
 ## Impact
 This paper contributes to the continuous evolution of transformer models, showing that even small adjustments like changing the activation function in the FFN layers can improve performance. These innovations could inform the development of more efficient and accurate models, especially for natural language processing (NLP) tasks. The findings intersect with previous efforts to refine transformers through alternative activation functions (e.g., Swish, GELU), suggesting further avenues for research into efficient architectures.
+
+## Code/ Pseudocode
+See code files in the repo.
 
 ## Links
 - [Original Paper: 2002.05202](https://arxiv.org/abs/2002.05202)
