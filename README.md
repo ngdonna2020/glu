@@ -38,6 +38,7 @@ $FFN_{RELU}(x, W_1, W_2)=RELU(xW_1)W_2$
 
 
 
+![image](https://github.com/user-attachments/assets/93786d2a-f603-4f51-bfb1-805040a6140f)
 
 
 
