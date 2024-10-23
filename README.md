@@ -41,7 +41,7 @@ $FFN_{RELU}(x, W_1, W_2)=RELU(xW_1)W_2$
 
 
 
-To keep the parameter count and computational cost similar to the original FFN, the hidden dimension (d_{ff}) is reduced.
+To keep the parameter count and computational cost similar to the original FFN, the hidden dimension $d_{ff}$ is reduced.
 Parameter Count Comparison:
 For the original FFN: (d_{model} \times d_{ff} + d_{ff} \times d_{model} = 2 \times d_{model} \times d_{ff}).
 For the GLU variants: (d_{model} \times d_{ff} + d_{model} \times d_{ff} + d_{ff} \times d_{model} = 3 \times d_{model} \times d_{ff}).
