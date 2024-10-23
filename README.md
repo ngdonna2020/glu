@@ -20,7 +20,7 @@ Here we see we have two trainable matrices W and V with V being used to calculat
 *Question 1: How do GLU variants differ from traditional ReLU/GELU activations, and why might they lead to better performance?*
 
 ## Approach
-Shazeer and his team created multiple variations of GLU using different functions (like ReLU, GELU, or Swish) instead of sigmoid. To assess model quality, they calculated log-perplexity for comparison. Each fully-trained model was fine-tuned on a proportional mixture of the Stanford Question-Answering Dataset (SQuAD) and tasks from the GLUE and SuperGLUE benchmarks. The paper reports the best performance for each task based on the recorded checkpoints during fine-tuning.
+Shazeer and his team created multiple variations of GLU using different functions (like ReLU, GELU, or Swish) instead of sigmoid. They proposed additional variations on the Transformer FFN layer which use GLU or one of its variants in place of the first linear transformation and the activation function and omited the bias terms (for example: $FFN_{RELU}(x, W_1, W_2)=RELU(xW_1)W_2$ . To assess model quality, they calculated log-perplexity for comparison. Each fully-trained model was fine-tuned on a proportional mixture of the Stanford Question-Answering Dataset (SQuAD) and tasks from the GLUE and SuperGLUE benchmarks. The paper reports the best performance for each task based on the recorded checkpoints during fine-tuning.
 
 <img width="317" alt="image" src="https://github.com/user-attachments/assets/3f644cfc-dbe1-48d6-81b2-77f23200c888">
 
