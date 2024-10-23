@@ -43,11 +43,11 @@ $FFN_{RELU}(x, W_1, W_2)=RELU(xW_1)W_2$
 
 To keep the parameter count and computational cost similar to the original FFN, the hidden dimension $d_{ff}$ is reduced.
 Parameter Count Comparison:
-For the original FFN: (d_{model} \times d_{ff} + d_{ff} \times d_{model} = 2 \times d_{model} \times d_{ff}).
-For the GLU variants: (d_{model} \times d_{ff} + d_{model} \times d_{ff} + d_{ff} \times d_{model} = 3 \times d_{model} \times d_{ff}).
+For the original FFN: $(d_{model} \times d_{ff} + d_{ff} \times d_{model} = 2 \times d_{model} \times d_{ff})$
+For the GLU variants: $(d_{model} \times d_{ff} + d_{model} \times d_{ff} + d_{ff} \times d_{model} = 3 \times d_{model} \times d_{ff})$
 Reduction Factor:
-To match the parameter count of the original FFN, the hidden dimension (d_{ff}) in the GLU variants is reduced by a factor of 2/3.
-This ensures that (3 \times d_{model} \times (2/3 \times d_{ff}) = 2 \times d_{model} \times d_{ff}), keeping the number of parameters and computational cost constant.
+To match the parameter count of the original FFN, the hidden dimension $d_{ff}$ in the GLU variants is reduced by a factor of 2/3.
+This ensures that $(3 \times d_{model} \times (2/3 \times d_{ff}) = 2 \times d_{model} \times d_{ff})$, keeping the number of parameters and computational cost constant.
 
 ## Pseudocode
 See the Pseudocode file in the repo.
