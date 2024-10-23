@@ -104,10 +104,14 @@ This paper contributes to the continuous evolution of transformer models, showin
 - [Claude Artifact](https://claude.site/artifacts/300fd9b1-f8fa-44d4-8f66-f59e1440eb67)
 
 ## Citation
-Shazeer, N. (2020). *GLU Variants Improve Transformer*. [arXiv:2002.05202](https://arxiv.org/abs/2002.05202).
+Dauphin, Y., Fan, A., Auli, M., & Grangier, D. (2016). *Language modeling with gated convolutional networks*. [arXiv:1905.005371612.08083](http://arxiv.org/abs/1612.08083).
 
 Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou, Y., Li, W., & Liu, P. (2019). *Exploring the limits of transfer learning with a unified text-to-text transformer*. [arXiv:1910.10683](https://arxiv.org/abs/1910.10683).
+
+Shazeer, N. (2020). *GLU Variants Improve Transformer*. [arXiv:2002.05202](https://arxiv.org/abs/2002.05202).
+
 
 Wang, A., Singh, A., Michael, J., Hill, F., Levy, O., & Bowman, S. R. (2018). *GLUE: A multi-task benchmark and analysis platform for natural language understanding*. [arXiv:1804.07461](https://arxiv.org/abs/1804.07461).
 
 Wang, A., Pruksachatkun, Y., Nangia, N., Singh, A., Michael, J., Hill, F., Levy, O., & Bowman, S. R. (2019). *SuperGLUE: A stickier benchmark for general-purpose language understanding systems*. [arXiv:1905.00537](https://arxiv.org/abs/1905.00537).
+
