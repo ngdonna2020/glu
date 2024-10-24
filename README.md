@@ -25,6 +25,9 @@ The sigmoid function transforms those inputs whose values lie in the domain R, t
 
 GLU is a linear transformation followed by a gating mechanism. Here we see we have two trainable matrices W and V with V being used to calculate the gated unit. The gate provides an additional filter after the activation which can be learned during training and depends on the input itself. The ⊗ operation is the element-wise multiplication. xV+c acts as a filter for the other half of the operation. So depending on what the matrix values are in the filter, those same entries become prominent or are diminished from the sigmoid activation matrix.
 
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/eadf0d8e-7d3c-4f83-af3d-b300553b407f">
+
+
 ## Approach
 Shazeer and his team created multiple variations of GLU using different functions (like ReLU, GELU, or Swish) instead of sigmoid. They proposed additional variations on the Transformer FFN layer which use GLU or one of its variants in place of the first linear transformation and the activation function and omited the bias terms. To assess model quality, they calculated log-perplexity for comparison. Each fully-trained model was fine-tuned on a proportional mixture of the Stanford Question-Answering Dataset (SQuAD) and tasks from the GLUE and SuperGLUE benchmarks. The paper reports the best performance for each task based on the recorded checkpoints during fine-tuning.
 
