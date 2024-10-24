@@ -25,7 +25,8 @@ The sigmoid function transforms those inputs whose values lie in the domain R, t
 
 GLU is a linear transformation followed by a gating mechanism. Here we see we have two trainable matrices W and V with V being used to calculate the gated unit. The gate provides an additional filter after the activation which can be learned during training and depends on the input itself. The ⊗ operation is the element-wise multiplication. xV+c acts as a filter for the other half of the operation. So depending on what the matrix values are in the filter, those same entries become prominent or are diminished from the sigmoid activation matrix.
 
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/eadf0d8e-7d3c-4f83-af3d-b300553b407f">
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/9de774b0-4fdf-4e6a-9917-f32709e65ef9">
+
 
 
 ## Approach
